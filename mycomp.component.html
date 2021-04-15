@@ -1,0 +1,8 @@
+<select [(ngModel)]="selected">
+    <option *ngFor="let b of elecbrands">{{b}}</option>    
+</select>
+
+<button (click)="onClick()">Show Product List</button>
+
+<h1>Product List</h1>
+<ul><li *ngFor="let o of output">{{o}}</li></ul>
